@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'IBM Plex Mono';
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body, main {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #010101;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  width: 50%;
+  margin: 2rem 0;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  padding: 5rem;
+}
+
+.sticky_parent {
+  height: 600vh;
+}
+
+.scroll_section {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 600vw;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+
+/* HEIGHT MUST BE SAME FOR SECTION AND CONTAINER */
+
+/* .sticky_parent {
+  height: 400vh;
+}
+
+.scroll_section {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 400vw;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scroll_contents {
+  height: 100%;
+  width: 100vw;
+} */
+
+ /* COMMENT OUT TO HERE */
+
+.sticky {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.red {
+  background-color: #ff3d00;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.green {
+  background-color: #05ff00;
+}
+
+.blue {
+  background-color: #2835f8;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #f7f7f7;
+}
+
+.left {
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+
+.right {
+  text-align: right;
+  margin-top: 85vh;
+  margin-right: 5vw;
+}
+
+img {
+  width: 500px;
+  height: 60%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  p {
+    width: 90%;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .right {
+    margin-top: 90vh;
+    margin-right: 10vw;
+  }
+}
